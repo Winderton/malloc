@@ -74,7 +74,7 @@ entity_t* new_entity(size_t size)
 
 void* w_malloc(size_t size)
 {
-	assert(size <= HEAP_SIZE);
+	assert((size+HEADER) <= HEAP_SIZE);
 
 	size += HEADER;
 
