@@ -1,5 +1,3 @@
-#define _CRT_SECURE_NO_WARNINGS
-
 #include <stdio.h>
 #include <string.h>
 #include <stdint.h>
@@ -126,7 +124,7 @@ void test()
 	foo->a = 5;
 	foo->b = 10;
 
-	strcpy(bar, "bar");
+	strcpy_s(bar, "bar");
 
 	memcpy(bazz, &foo->a, sizeof(int));
 
